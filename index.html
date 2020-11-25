@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="shortcut icon" href="Resources/RVFavicon3.png">
+    <link rel="stylesheet" type="text/css" href="RV style.css">
+    <script src="openLogin.js"></script>
+
+    <title>Rateable Valuations</title>
+  </head>
+
+  <body>
+
+    <!-- This is the header -->
+    <div id="header" class="z">
+      <div id="header-logos">
+        <img id="RVLogo" src="Resources/RV Logo.png">
+        <a href="https://www.rics.org/eu/" target="_blank"><img id="RICSLogo" src="Resources/RICS Logo.png"></a>
+      </div>
+
+      <div id="header-buttons">
+
+        <img id="key" src="Resources/Key Icon.png">
+        <p class="account-buttons" onclick="openLogin()">Login</p>
+
+        <img id="add" src="Resources/Add_User Icon.png">
+        <p class="account-buttons">Register</p>
+
+        <p id="contact-button">CONTACT US</p>
+      </div>
+    </div>
+
+      <!-- This is main part of the page -->
+          <div id="hero-section" class="z">
+
+              <div id="hero-text">
+                <h1>DO YOU THINK YOUR BUSINESS RATES ARE TOO HIGH?</h1>
+                <p>Use our free valuation tool or book a valuation with one of our qualified surveyors.<br>No shock commissions and fair fixed fees starting from £295!</p>
+              </div>
+
+              <div id="search-bar">
+                <input id="bar" type="text" placeholder="Commercial property postcode..." size="60">
+                <p id="search-CTA">Get free valuation!</p>
+              </div>
+
+              <h2 id="cards-title">Need help?</h2>
+              <img id="help-arrow" src="Resources/Arrow.svg">
+
+
+              <div id="cards" class="centered-container">
+
+                <div id="card1" class="card">
+                  <div id="card1-image">
+                    <img id="computer" src="Resources/Computer Icon.png">
+                  </div>
+                  <p>We pride ourselves on working collaboratively with our clients. That’s why we offer a free online valuation tool which will help you better understand your rateable valuation and rates payable.</p>
+                </div>
+
+                <div id="card2" class="card">
+                  <div id="card2-image">
+                    <img id="gear" src="Resources/Gears Icon.png">
+                  </div>
+                  <p>Use our free valuation tool to estimate the rateable value of your commercial property in England and Wales. You can add, remove or alter the property information, make allowances and set the base rate pricing.</p>
+                </div>
+
+                <div id="card3" class="card">
+                  <div id="card3-image">
+                    <img id="booking" src="Resources/Booking Icon.png">
+                  </div>
+                  <p>Book a qualified surveyor to advise you on the rateable value of your commercial property. You can book an essential desktop based valuation or a detailed on-site valuation.</p>
+                </div>
+              </div>
+
+              <div id="shield-info" class="centered-container">
+                <div id="shield-text">
+                  <h2>We've got you covered!</h2>
+                  <p>Our rating list contains the most up-to-date information of around 2 million commercial properties in England and Wales.Our qualified rating surveyors provide  nationwide coverage and we employ some of the highest qualified surveyors with some holding the RICS Rating Diploma.</p>
+                </div>
+                <img id="shield-image" src="Resources/Shield Icon.png">
+              </div>
+
+          </div>
+
+      <!-- This is the secondary part of the page -->
+          <div id="money-info" class="centered-container" class="z">
+            <div id="money-text">
+              <h2>Fair fixed fees and no shock commissions!</h2>
+              <p>Our fees are fixed up front, ensuring there are no surprises and we promise to never charge any shock commissions. Not only does this provide you with certainty of cost, it also provides you with confidence that our surveyors are not lead by the prospect of large commission payments. We are here from initial point of contact right through to the end, be that to provide an essential desktop valuation, on-site valuation or helping you through the Check, Challenge and Appeal process. We’re here to support you every step of the way. <br><br> Our surveyors don’t do speculative appeals, we provide honest and professional advice at a fair fixed fee.</p>
+            </div>
+          </div>
+
+          <div id="CTA-band-background">
+            <div id="CTA-band" class="centered-container">
+              <p id="band-text">Book a rateable valuation with one of our surveyors!</p>
+              <p id="band-button">BOOK VALUATION</p>
+            </div>
+          </div>
+
+    <!-- This is the footer -->
+    <div id="footer" class="z">
+
+      <div id="footer-nav" class="centered-container">
+          <p id="price">Pricing Plans</p>
+          <p class="nav">Discover</p>
+          <p class="nav">About</p>
+          <p class="nav">Contact</p>
+          <p class="nav">FAQs</p>
+          <p id="legal">Legal & Terms</p>
+      </div>
+
+      <div id="social-icons">
+          <img id="Linkedin" src="Resources/LinkedIn Logo.png">
+          <img id="Facebook" src="Resources/Facebook Logo.png">
+          <img id="Twitter" src="Resources/Twitter Logo.png">
+      </div>
+
+
+      <div id="company-info">
+        <p>Company Registration Number 12089240</p>
+        <p>Company Registered Address Blue Tower, MediaCityUK, Manchester M50 2ST</p>
+        <p>© 2019 All Rights Reserved</p>
+      </div>
+
+    </div>
+
+    <!-- This is the login modal -->
+    <div id="overlay">
+      <div id="login-modal">
+        <h2>Welcome back!</h2>
+        <form id="login-form">
+          <label for="email" class="login-tag">Email</label>
+          <input type="text" class="login-field" name="email">
+
+          <label for="password" class="login-tag">Password</label>
+          <input type="password" class="login-field" name="password">
+
+          <div id="keep-div">
+            <input type="checkbox" id="keep-box" name="keep">
+            <label for="keep" id="keep-text">Keep me signed in</label>
+          </div>
+        </form>
+
+        <p id="login-button">Login</p>
+
+        <div id="secondary-buttons">
+          <p id="create-button">Create account</p>
+          <p id="cancel-button" onclick="closeLogin()">Cancel</p>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

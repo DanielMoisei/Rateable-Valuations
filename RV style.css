@@ -1,0 +1,500 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+p {
+  font-family: "Open Sans";
+  font-size: 14pt;
+}
+
+h1 {
+  font-family: "Open Sans";
+  font-size: 30pt;
+}
+
+h2 {
+	font-family: "Open Sans";
+}
+
+.z {
+	z-index: 1;
+}
+
+#keep-box, #login-button, #create-button, #cancel-button, #RICSLogo, .account-buttons, #contact-button, #search-CTA, #help-arrow, #band-button, #price, #legal, .nav, #Linkedin, #Facebook, #Twitter:hover {
+	cursor: pointer;
+}
+
+/* The header starts here */
+#header {
+  height: 85px;
+  display: flex;
+  align-items: center;
+}
+
+#header-logos {
+  margin-left: 65px;
+}
+
+#RVLogo {
+  border-right: thin solid #000000;
+  padding-right: 30px;
+}
+
+#RICSLogo {
+  margin-left: 30px;
+}
+
+#header-buttons {
+  margin-left: auto;
+  margin-right: 65px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.account-buttons {
+  font-weight: 700;
+  color: #002147;
+  margin-right: 30px;
+}
+
+#key {
+  height: 27px;
+  padding-right: 10px;
+}
+
+#add {
+  height: 25px;
+  padding-right: 10px;
+}
+
+#contact-button {
+  background-color: #f47721;
+  padding: 15px 20px 15px 20px;
+  border-radius: 13px;
+  color: #ffffff;
+  font-weight: 700;
+}
+/* The header ends here */
+
+/* The main part of the page starts here */
+#hero-section {
+  background-image: url("Resources/Cityscape4.jpg");
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+	width: 100%;
+}
+
+#hero-text {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 4px 4px 16px rgba(0,0,0,0.3);
+}
+
+#hero-text h1 {
+  padding-top: 125px;
+}
+
+#hero-text p {
+  margin-top: 25px;
+  font-size: 16pt;
+}
+
+#search-bar {
+  width: 1006px;
+  display: flex;
+	align-self: center;
+  margin: auto;
+  margin-top: 80px;
+  background-color: #fff;
+  border-radius: 11px;
+}
+
+#bar {
+  color: rgba(0,0,0,0.5);
+  padding: 13px 15px 13px 15px;
+  font-weight: 500;
+	font-size: 16pt;
+	border: none;
+	border-radius:11px 0px 0px 11px;
+	outline: none;
+}
+
+#search-CTA {
+  margin-left: auto;
+  background-color: #f47721;
+  border-radius: 0px 11px 11px 0px;
+  color: #fff;
+  padding: 13px;
+  font-weight: 700;
+}
+/* The main part of the page ends here */
+
+/* The cards start here */
+.centered-container {
+	display: flex;
+	align-self: center;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#cards-title {
+  font-weight: 600;
+  font-size: 30pt;
+  color: #fff;
+  text-align: center;
+  margin-top: 160px;
+  text-shadow: 4px 4px 16px rgba(0,0,0,0.3);
+}
+
+#help-arrow {
+	display: flex;
+	margin: 35px auto 0 auto;
+	width: 40px;
+	height: 30px;
+}
+
+#cards p {
+	color: #002147;
+	font-weight: 700;
+	font-size: 12pt;
+	padding: 0px 30px 80px 30px;
+}
+
+.card {
+	width: 291px;
+	height: 410px;
+	background-color: #fff;
+	border-radius: 15px;
+	margin-top: 100px;
+	overflow: inherit;
+}
+
+#cards {
+	display: flex;
+}
+
+#card1 {
+	margin-right: auto;
+}
+
+#card2 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#card3 {
+	margin-left: auto;
+}
+
+#card1-image {
+	background-color: #f47721;
+	border-radius: 50%;
+	text-align: center;
+	margin: 45px 91px 22px 91px;
+	padding: 26px 19px 24px 21px;
+}
+
+#computer {
+	width: 69px;
+	height: 59px;
+}
+
+#card2-image {
+	background-color: #f47721;
+	border-radius: 100%;
+	text-align: center;
+	margin: 45px 91px 22px 91px;
+	padding: 20px 16px;
+}
+
+#gear {
+	width: 77px;
+	height: 69px;
+}
+
+#card3-image {
+	background-color: #f47721;
+	border-radius: 100%;
+	text-align: center;
+	margin: 45px 91px 22px 91px;
+	padding: 17px 18px 15px 14px;
+}
+
+#booking {
+	width: 77px;
+	height: 77px;
+}
+/* The cards end here */
+
+/* The shield part starts here */
+#shield-info {
+	color: #fff;
+	display: flex;
+	margin-top: 125px;
+	margin-bottom: 140px;
+}
+
+#shield-text h2 {
+	font-weight: 900;
+	font-size: 30pt;
+}
+
+#shield-text p {
+	font-size: 14pt;
+	font-weight: 600;
+	margin-top: 40px;
+	padding-right: 150px;
+}
+
+#shield-image {
+	width: 128px;
+	height: 157px;
+	margin: auto 0;
+}
+/* The shield part ends here */
+
+/* The white fees part starts here */
+#money-info {
+	color: #002147;
+	display: flex;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#money-text h2 {
+	font-weight: 900;
+	font-size: 30pt;
+}
+
+#money-text p {
+	font-size: 14pt;
+	font-weight: 600;
+	margin-top: 40px;
+}
+/* The white fees part ends here */
+
+/* The CTA band starts here */
+#CTA-band-background {
+	background-color: #002147;
+}
+
+#CTA-band {
+	display: flex;
+/*	background-color: #002147; */
+	padding-top: 22px;
+	padding-bottom: 22px;
+}
+
+#band-text {
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 600;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#band-button {
+	color: #fff;
+	font-size: 14pt;
+	font-weight: 700;
+	background-color: #f47721;
+	border-radius: 13px;
+	padding: 15px 20px 15px 20px;
+/*	margin-right: 12.44%; */
+	margin-left: auto;
+}
+/* The CTA band ends here */
+
+/* The nav starts here */
+#footer-nav {
+	display: flex;
+/*	margin-left: 12.44%;
+	margin-right: 12.44%; */
+	margin-top: 50px;
+	border-bottom: thin solid #000000;
+	padding-bottom: 50px;
+}
+
+#footer-nav p {
+	color: #002147;
+	font-size: 16pt;
+	font-weight: 500;
+}
+
+.nav {
+	margin: auto;
+}
+
+#price {
+	margin-right: auto;
+}
+
+#legal {
+	margin-left: auto;
+}
+/* The nav ends here */
+
+/* The footer starts here */
+#social-icons {
+	margin-top: 50px;
+	margin-left: 40.11%;
+	margin-right: 40.11%;
+	display: flex;
+}
+
+#Linkedin {
+	margin-right: auto;
+}
+
+#Facebook {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#Twitter {
+	margin-left: auto;
+}
+
+#company-info {
+	margin: 50px 0;
+}
+
+#company-info p {
+	color: #002147;
+	font-size: 12pt;
+	font-weight: 700;
+	text-align: center;
+}
+/* The footer ends here */
+
+/* This is the login modal */
+#overlay {
+	background-color: rgba(1, 11, 25, 0.8);
+	width: 100%;
+	height: 100vh;
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+
+#login-modal {
+		background-color: #fff;
+		width: 600px;
+		border-radius: 15px;
+		height: 536px;
+		align-self: center;
+		margin: 0 auto;
+}
+
+#login-modal h2 {
+	font-size: 20pt;
+	font-weight: bold;
+	color: #002147;
+	margin: 50px 0px 0px 50px;
+}
+
+#login-form {
+	margin: 30px 50px 0px 50px;
+}
+
+.login-tag {
+	font-size: 16pt;
+	font-weight: 600;
+	color: #002147;
+}
+
+.login-field {
+	background-color: rgba(0, 33, 71, 0.2);
+	color: #002147;
+	padding: 9px 13px 9px 13px;
+	font-weight: 500;
+	font-size: 14pt;
+	border: none;
+	border-radius: 11px;
+	outline: none;
+	width: 474px;
+	height: 30px;
+	margin: 5px 0px 15px 0px;
+}
+
+#keep-div {
+	display: flex;
+}
+
+#keep-text {
+	font-size: 14pt;
+	font-weight: 500;
+	color: #002147;
+	margin: 0 0 0 5px;
+}
+
+#keep-box {
+	border-color: #002147;
+	width: 20px;
+	height: 20px;
+}
+
+#secondary-buttons {
+	display: flex;
+	width: 500px;
+	margin: 0 auto;
+}
+
+#login-button {
+	background-color: #002147;
+	border-radius: 15px;
+	text-align: center;
+	width: 500px;
+	padding: 10px 0;
+	margin: 30px auto 0 auto;
+	color: #fff;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+#create-button {
+	background-color: #F47721;
+	border-radius: 15px;
+	text-align: center;
+	width: 240px;
+	padding: 10px 0;
+	margin: 20px 10px 0 auto;
+	color: #fff;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+#cancel-button {
+	background-color: #fff;
+	border-radius: 15px;
+	text-align: center;
+	width: 240px;
+	padding: 10px 0;
+	margin: 20px auto 0 10px;
+	box-shadow: inset 0px 0px 0px 3px #002147;
+	color: #002147;
+	font-size: 16pt;
+	font-weight: bold;
+}
+/* The login modal ends here */
