@@ -1,7 +1,7 @@
-function openLogin() {
-    document.getElementById('overlay').style.display = 'flex';
+function toggleLogin(state) {
+    document.getElementById('overlay').style.display = state;
 }
 
-function closeLogin() {
-    document.getElementById('overlay').style.display = 'none';
-}
+// function closeLogin() {
+//     document.getElementById('overlay').style.display = 'none';
+// }
