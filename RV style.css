@@ -37,8 +37,24 @@ h2 {
 	z-index: 1;
 }
 
-#keep-box, #login-button, #create-button, #cancel-button, #RICSLogo, .account-buttons, #contact-button, #search-CTA, #help-arrow, #band-button, #price, #legal, .nav, #Linkedin, #Facebook, #Twitter:hover {
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+#keep-box, #login-button, #create-button, #cancel-button, #RICSLogo, .account-buttons, #contact-button, #search-CTA, #help-arrow, #band-button, #price, #legal, .nav, #Linkedin, #Facebook, #Twitter, #register-button, #login2-button, #close-button:hover {
 	cursor: pointer;
+}
+
+#band-button:hover, #contact-button:hover, #search-CTA:hover {
+	background-color: #bf570f;
 }
 
 /* The header starts here */
@@ -90,6 +106,7 @@ h2 {
   border-radius: 13px;
   color: #ffffff;
   font-weight: 700;
+	transition: 0.5s all;
 }
 /* The header ends here */
 
@@ -146,6 +163,7 @@ h2 {
   color: #fff;
   padding: 13px;
   font-weight: 700;
+	transition: 0.5s all;
 }
 /* The main part of the page ends here */
 
@@ -173,6 +191,10 @@ h2 {
 	height: 30px;
 }
 
+#help-arrow img {
+	width: inherit;
+}
+
 #cards p {
 	color: #002147;
 	font-weight: 700;
@@ -187,7 +209,13 @@ h2 {
 	border-radius: 15px;
 	margin-top: 100px;
 	overflow: inherit;
+	transition: 0.5s all;
 }
+
+.card:hover {
+	transform: scale(1.1);
+}
+
 
 #cards {
 	display: flex;
@@ -300,7 +328,6 @@ h2 {
 
 #CTA-band {
 	display: flex;
-/*	background-color: #002147; */
 	padding-top: 22px;
 	padding-bottom: 22px;
 }
@@ -320,16 +347,14 @@ h2 {
 	background-color: #f47721;
 	border-radius: 13px;
 	padding: 15px 20px 15px 20px;
-/*	margin-right: 12.44%; */
 	margin-left: auto;
+	transition: 0.5s all;
 }
 /* The CTA band ends here */
 
 /* The nav starts here */
 #footer-nav {
 	display: flex;
-/*	margin-left: 12.44%;
-	margin-right: 12.44%; */
 	margin-top: 50px;
 	border-bottom: thin solid #000000;
 	padding-bottom: 50px;
@@ -362,17 +387,50 @@ h2 {
 	display: flex;
 }
 
-#Linkedin {
+#Linkedinlink {
 	margin-right: auto;
+}
+
+#Facebooklink {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#Twitterlink {
+	margin-left: auto;
+}
+
+#Linkedin {
+	background-image: url("Resources/LinkedIn Logo.png");
+	width: 40px;
+	height: 38px;
+	transition: 0.5s all;
 }
 
 #Facebook {
-	margin-left: auto;
-	margin-right: auto;
+	background-image: url("Resources/Facebook Logo.png");
+	width: 20px;
+	height: 40px;
+	transition: 0.5s all;
 }
 
 #Twitter {
-	margin-left: auto;
+	background-image: url("Resources/Twitter Logo.png");
+	width: 40px;
+	height: 32px;
+	transition: 0.5s all;
+}
+
+#Linkedin:hover {
+	background-image: url("Resources/LinkedDark.png");
+}
+
+#Facebook:hover {
+	background-image: url("Resources/FacebookDark.png");
+}
+
+#Twitter:hover {
+	background-image: url("Resources/TwitterDark.png");
 }
 
 #company-info {
@@ -387,8 +445,8 @@ h2 {
 }
 /* The footer ends here */
 
-/* This is the login modal */
-#overlay {
+/* These are the modals */
+.overlay {
 	background-color: rgba(1, 11, 25, 0.8);
 	width: 100%;
 	height: 100vh;
@@ -396,6 +454,10 @@ h2 {
 	position: fixed;
 	top: 0;
 	z-index: 2;
+}
+
+.overlay p {
+	user-select: none;
 }
 
 #login-modal {
@@ -455,7 +517,7 @@ h2 {
 	height: 20px;
 }
 
-#secondary-buttons {
+#secondary-login-buttons {
 	display: flex;
 	width: 500px;
 	margin: 0 auto;
@@ -474,13 +536,14 @@ h2 {
 }
 
 #create-button {
-	background-color: #F47721;
+	background-color: #fff;
 	border-radius: 15px;
 	text-align: center;
 	width: 240px;
 	padding: 10px 0;
 	margin: 20px 10px 0 auto;
-	color: #fff;
+	box-shadow: inset 0px 0px 0px 3px #F47721;
+	color: #F47721;
 	font-size: 16pt;
 	font-weight: bold;
 }
@@ -497,4 +560,171 @@ h2 {
 	font-size: 16pt;
 	font-weight: bold;
 }
-/* The login modal ends here */
+
+#register-modal {
+		background-color: #fff;
+		width: 600px;
+		border-radius: 15px;
+		height: 634px;
+		align-self: center;
+		margin: 0 auto;
+}
+
+#register-modal h2 {
+	font-size: 20pt;
+	font-weight: bold;
+	color: #002147;
+	margin: 50px 0px 0px 50px;
+}
+
+#register-form {
+	margin: 30px 50px 0px 50px;
+}
+
+#terms-div {
+	display: flex;
+}
+
+#terms-text {
+	font-size: 14pt;
+	font-weight: 500;
+	color: #002147;
+	margin: 0 0 0 5px;
+}
+
+#terms-orange {
+	color: #F47721;
+	font-weight: 700;
+}
+
+#terms-orange:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#terms-box {
+	border-color: #002147;
+	width: 20px;
+	height: 20px;
+}
+
+#secondary-register-buttons {
+	display: flex;
+	width: 500px;
+	margin: 0 auto;
+}
+
+#register-button {
+	background-color: #F47721;
+	border-radius: 15px;
+	text-align: center;
+	width: 500px;
+	padding: 10px 0;
+	margin: 30px auto 0 auto;
+	color: #fff;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+#login2-button {
+	background-color: #fff;
+	border-radius: 15px;
+	text-align: center;
+	width: 240px;
+	padding: 10px 0;
+	margin: 20px 10px 0 auto;
+	box-shadow: inset 0px 0px 0px 3px #002147;
+	color: #002147;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+#login2-button:hover {
+	background-color: #002147;
+	color: #fff;
+}
+
+#cancel-button:hover {
+	background-color: #002147;
+	color: #fff;
+}
+
+#create-button:hover {
+	background-color: #F47721;
+	color: #fff;
+}
+
+#terms-conditions {
+	background-color: #fff;
+	width: 600px;
+	border-radius: 15px;
+	height: 800px;
+	align-self: center;
+	margin: 0 auto;
+}
+
+#terms-content {
+	width: 500px;
+	height: 650px;
+	overflow-y: scroll;
+	margin: 30px auto;
+}
+
+#close-button {
+	background-color: #fff;
+	border-radius: 15px;
+	text-align: center;
+	width: 500px;
+	padding: 10px 0;
+	margin: 0 auto;
+	box-shadow: inset 0px 0px 0px 3px #002147;
+	color: #002147;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+#close-button:hover {
+	background-color: #002147;
+	color: #fff;
+}
+
+#terms-content h1 {
+	color: #002147;
+	font-size: 24pt;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+#terms-content h2 {
+	color: #002147;
+	font-size: 18pt;
+	font-weight: 700;
+	margin: 10px 0;
+}
+
+#terms-content p {
+	color: #002147;
+	font-size: 14pt;
+	font-weight: 500;
+	user-select: text;
+}
+
+#terms-content a {
+	text-decoration: none;
+	cursor: default;
+}
+
+#terms-content a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#terms-contact {
+	color: #002147;
+	font-size: 14pt;
+	font-weight: 500;
+}
+
+#orange {
+	color: #F47721;
+}
