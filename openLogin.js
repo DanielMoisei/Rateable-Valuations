@@ -23,3 +23,21 @@ function toggleModal(state, id, parentId) {
 function scrollToCards() {
   document.getElementById("cards").scrollIntoView();
 }
+
+function checkPassword() {
+
+  var confirm = document.getElementById('password-confirm').value
+  var password = document.getElementById('password-field').value
+
+
+  if (confirm != password) {
+    document.getElementById('password-confirm').style.border = '2px solid red';
+    document.getElementById('pass-error').style.display = 'inline-flex';
+  }
+
+  else {
+    document.getElementById('pass-error').style.display = 'none';
+    document.getElementById('password-confirm').style.border = 'none';
+    setTimeout(() => {  alert('Sorry, ran out of budget.'); }, 50);
+  }
+}

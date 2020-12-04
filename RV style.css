@@ -729,3 +729,11 @@ html {
 #orange {
 	color: #F47721;
 }
+
+#pass-error {
+	display: none;
+	margin-left: 127px;
+	color: red;
+	font-size: 14pt;
+	font-weight: 600;
+}
