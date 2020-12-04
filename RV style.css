@@ -49,7 +49,7 @@ html {
 	overflow: hidden;
 }
 
-#keep-box, #login-button, #create-button, #cancel-button, #RICSLogo, .account-buttons, #contact-button, #search-CTA, #help-arrow, #band-button, #price, #legal, .nav, #Linkedin, #Facebook, #Twitter, #register-button, #login2-button, #close-button:hover {
+#keep-box, #login-button, #create-button, #cancel-button, #RICSLogo, .account-buttons, #contact-button, #search-CTA, #help-arrow, #band-button, #price, #legal, .nav, #Linkedin, #Facebook, #Twitter, #register-button, #login2-button, .close-button:hover {
 	cursor: pointer;
 }
 
@@ -670,7 +670,7 @@ html {
 	margin: 30px auto;
 }
 
-#close-button {
+.close-button {
 	background-color: #fff;
 	border-radius: 15px;
 	text-align: center;
@@ -681,9 +681,10 @@ html {
 	color: #002147;
 	font-size: 16pt;
 	font-weight: bold;
+	display: none;
 }
 
-#close-button:hover {
+.close-button:hover {
 	background-color: #002147;
 	color: #fff;
 }
