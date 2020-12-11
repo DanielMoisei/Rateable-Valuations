@@ -41,3 +41,18 @@ function checkPassword() {
     setTimeout(() => {  alert('Sorry, ran out of budget.'); }, 50);
   }
 }
+
+
+class User {
+  constructor(email, password) {
+    this.email = email;
+    this.password = password;
+  }
+}
+
+function createUser() {
+  var emailFieldValue = document.getElementById('email-field').value;
+  var passwordFieldValue = document.getElementById('password-field').value;
+  var account = new User(emailFieldValue, passwordFieldValue);
+  console.log(account.email);
+}

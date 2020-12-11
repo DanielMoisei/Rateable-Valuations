@@ -5,7 +5,7 @@
 
     <link rel="shortcut icon" href="Resources/RVFavicon3.png">
     <link rel="stylesheet" type="text/css" href="RV style.css">
-    <script src="openLogin.js"></script>
+    <script src="RV scripts.js"></script>
 
     <title>Rateable Valuations</title>
   </head>
@@ -157,7 +157,7 @@
         <h2>Create your account</h2>
         <form id="register-form">
           <label for="email" class="login-tag">Email</label>
-          <input type="text" class="login-field" name="email" required>
+          <input type="text" class="login-field" name="email" id="email-field" required>
 
           <label for="password" class="login-tag">Password</label>
           <input type="password" class="login-field" id="password-field" name="password" required>
@@ -173,7 +173,7 @@
         </form>
 
 <!-- toggleModal('flex', 'overlay-terms') -->
-        <p id="register-button" onclick="checkPassword()">Create account</p>
+        <p id="register-button" onclick="checkPassword(), createUser()">Create account</p>
 
         <div id="secondary-register-buttons">
           <p id="login2-button" onclick="toggleModal('none', 'overlay-register'), toggleModal('flex', 'overlay-login')">Login</p>
